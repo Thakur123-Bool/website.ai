@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Question Answering API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PDF Question Answering API</h1>
+        <p>Welcome to the DeepSeek-powered PDF Question Answering API!</p>
+
+        <!-- File Upload Section -->
+        <div class="upload-section">
+            <h2>Upload PDF File</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" id="file-upload" name="file" accept=".pdf" required>
+                <input type="text" id="description" name="description" placeholder="Enter description" required>
+                <button type="submit">Upload</button>
+            </form>
+            <p id="upload-status"></p>
+        </div>
+
+        <!-- Question Section -->
+        <div class="question-section">
+            <h2>Ask a Question</h2>
+            <input type="text" id="question" placeholder="Ask a question about the PDF..." required>
+            <button id="ask-btn">Ask</button>
+            <div id="response"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
